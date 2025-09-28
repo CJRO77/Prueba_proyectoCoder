@@ -12,16 +12,17 @@ header {
 
 header nav a h1 {
     color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 70px;
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: 700;
 
 }
 
 .nav-link {
     color: white !important;
+    font-size: 20px;
 }
 
 .btn {

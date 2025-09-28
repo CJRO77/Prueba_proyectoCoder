@@ -1,0 +1,19 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJRO77/Prueba_proyectoCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJRO77/Prueba_proyectoCoder/issues"
+  },
+  "homepage": "https://github.com/CJRO77/Prueba_proyectoCoder#readme",
+  "description": ""
+}
