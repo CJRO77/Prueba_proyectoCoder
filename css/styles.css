@@ -6,23 +6,18 @@
 
 header {
 
-    background-color: black;
-
+    background-color: rgb(28, 26, 26);
 }
 
-header nav a h1 {
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: red;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    font-weight: 700;
-
+.navbar-brand h1 {
+  font-size: 22px; /* más chico */
+  margin: 0;
+  color: #ddd;
 }
 
 .nav-link {
     color: white !important;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .btn {
@@ -36,17 +31,71 @@ header nav a h1 {
 }
 
 
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(83, 164, 234);
+}
 
+
+
+.caja {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 250px;
+    text-align: center;
+    max-width: 300px;
+    transition: 1s;
+}
+
+.caja:hover {
+    transform: scale(1.1);
+    box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+    -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+    -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+    ;
+}
+
+.caja img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caja h3 {
+    margin: 15px 0 10px;
+    padding: 0 10px;
+}
+
+.caja p {
+    margin: 0 0 15px;
+    padding: 0 10px;
+    color: #555;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .caja {
+        flex: 1 1 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caja {
+        flex: 1 1 100%;
+    }
+}
 
 body {
-
-    display: flex;
-    display: inline;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/foto19.jpg");
-
+    font-family: Arial, sans-serif;
+     background-image: url("../img/foto19.jpg");
+    margin: 0;
 }
 
 
@@ -89,36 +138,37 @@ li {
 }
 
 .container-form {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(65, 64, 64);
-    width: 100%;
-    height: 200px;
-    margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
 }
-
-.container-form h3 {
-    color: white;
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.container-form p {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
 .container-form a {
     text-decoration: none;
-    color: white;
-    background-color: rgb(247, 118, 5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 20px;
+    color: #04030d;
+    
+
 }
+
+.info-form {
+  flex: 1 1 300px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container-form {
+    flex-direction: column;
+  }
+}
+
+
+
 
 .container01 {
     display: flex;
@@ -133,19 +183,28 @@ li {
     padding: 10px 35px;
     margin: 20px 5px;
     width: 400px;
-    background-color: rgb(65, 64, 64);
+    background-color: rgb(128, 208, 244);
 
 }
 
 .mi-caja label {
-    color: white;
+    color: rgb(17, 17, 17);
 
 }
 
-.mi-caja:hover {
-    background-color: rgb(247, 118, 5);
-    border: 2px solid #151702;
-    transition: 0.2s;
+
+
+
+@media only screen and (max-width: 768px) {
+    .mi-caja {
+        flex: 1 1 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mi-caja {
+        flex: 1 1 100%;
+    }
 }
 
 label {
@@ -159,7 +218,7 @@ textarea {
     width: 100%;
     padding: 5px 10px;
     margin-bottom: 5px;
-    border: 2px solid #525251;
+    border: 2px solid #101001;
 }
 
 
@@ -256,6 +315,7 @@ footer a i {
 
     color: white;
     font-size: 40px;
+    transition: 1s;
 }
 
 footer a i:hover {
@@ -264,46 +324,7 @@ footer a i:hover {
 }
 
 
-.tarjeta {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(234, 231, 231, 0.1);
-    background-color: rgb(240, 232, 231);
-    overflow: hidden;
-    margin: 50px;
-    padding: 50px;
-}
 
-
-.card_image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card_content {
-    padding: 15px;
-}
-
-.card_content h2 {
-    margin-top: 0;
-
-}
-
-.card_content h2:hover {
-    color: rgb(247, 118, 5);
-    transition: 0.2s;
-}
-
-.card_content p {
-    color: #e20d0d;
-    line-height: 1.6;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
 
 
 .preguntas h1 {
@@ -384,7 +405,7 @@ footer a i:hover {
 }
 
 .map-container {
-    
+
     width: 100%;
     max-width: 600px;
     height: 400px;
@@ -396,7 +417,7 @@ footer a i:hover {
 }
 
 .map-container iframe {
-    
+
     width: 100%;
     height: 100%;
     border: 0;
@@ -424,8 +445,8 @@ footer a i:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.contacta p{
-     color: white;
+.contacta p {
+    color: white;
     background-color: rgb(247, 118, 5);
     display: flex;
     justify-content: center;
