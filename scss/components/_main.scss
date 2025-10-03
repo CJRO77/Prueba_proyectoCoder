@@ -22,9 +22,10 @@ body {
 .btn {
     background-color: white;
     border: 1px solid rgb(19, 17, 17);
-    &{
+    &:hover{
         background-color: rgb(247, 118, 5);
         color: white;
+        transition: 0.5s;
     }
 }
 
