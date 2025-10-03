@@ -51,4 +51,46 @@ body {
   transition: 0.5s;
 }
 
+.titulos p {
+  text-align: left;
+  text-decoration: none;
+  color: rgb(247, 118, 5);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 5%;
+  padding: 50px;
+}
+
+.flex-container div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 250px;
+  text-align: center;
+  max-width: 350px;
+  padding: 15px 15px;
+  transition: 1s;
+}
+.flex-container div:hover {
+  transform: scale(1.1);
+  box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+  -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+  -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+}
+.flex-container div img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.flex-container div img h3 {
+  margin: 15px 0 10px;
+  padding: 0 10px;
+}
+.flex-container div img h3 p {
+  margin: 0 0 15px;
+  padding: 0 10px;
+  color: #555;
+}
+
 /*# sourceMappingURL=estilos.css.map */
