@@ -1,0 +1,19 @@
+footer{
+     background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    a{
+        i{
+             color: white;
+             font-size: 40px;
+             transition: 0.5s; 
+             &:hover{
+                 color: rgb(247, 118, 5);
+                 font-size: 40px;
+             }
+
+        }
+    }
+}

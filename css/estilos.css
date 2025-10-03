@@ -1,3 +1,53 @@
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+footer a i {
+  color: white;
+  font-size: 40px;
+  transition: 0.5s;
+}
+footer a i:hover {
+  color: rgb(247, 118, 5);
+  font-size: 40px;
+}
 
+header {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/foto19.jpg");
+  margin: 0;
+}
+
+.navbar-brand h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #ddd;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid rgb(19, 17, 17);
+}
+.btn {
+  background-color: rgb(247, 118, 5);
+  color: white;
+}
 
 /*# sourceMappingURL=estilos.css.map */

@@ -11,7 +11,6 @@ header {
 
 .navbar-brand h1 {
     font-size: 22px;
-    /* más chico */
     margin: 0;
     color: #ddd;
 }
@@ -29,6 +28,7 @@ header {
 .btn:hover {
     background-color: rgb(247, 118, 5);
     color: white;
+    transition: 0.5s;
 }
 
 
