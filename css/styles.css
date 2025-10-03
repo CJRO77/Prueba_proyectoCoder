@@ -141,10 +141,25 @@ li {
     padding: 20px;
 }
 
+.container-form h3 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.container-form p {
+    color: black;
+    margin: 30px;
+}
+
 .container-form a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: blue;
-    margin: 15px;
+    margin: 10px;
 
 
 }
