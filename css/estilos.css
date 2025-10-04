@@ -93,4 +93,136 @@ body {
   color: #555;
 }
 
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.container-form h3 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 8px;
+}
+.container-form h3 p {
+  color: black;
+  margin: 30px;
+}
+.container-form h3 p a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: blue;
+  margin: 10px;
+}
+
+.contenedor2 {
+  background-color: rgb(60, 77, 60);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.container01 a {
+  flex: end;
+  width: 350px;
+  height: auto;
+}
+.container01 a img {
+  max-width: 300px;
+  width: 100%;
+}
+
+mi-caja {
+  flex: block;
+  min-width: 280px;
+  border: 5px solid rgb(8, 7, 7);
+  border-radius: 8px;
+  padding: 25px;
+  margin: 10px 10px;
+}
+mi-caja label {
+  color: white;
+}
+mi-caja label input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgb(9, 9, 9);
+}
+mi-caja label input[type=text] input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgb(9, 9, 9);
+}
+mi-caja label input[type=text] input[type=email] textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgb(9, 9, 9);
+}
+mi-caja label input[type=text] input[type=email] textarea input[type=submit] {
+  background-color: rgb(15, 14, 14);
+  color: white;
+  text-overflow: clip;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+mi-caja label input[type=text] input[type=email] textarea input[type=submit]:hover {
+  background-color: rgb(233, 100, 11);
+}
+
+.servicio h1 {
+  color: black;
+  background-color: rgb(247, 118, 5);
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container div {
+  flex: 1;
+  padding: 30px;
+}
+.container div h3 {
+  color: white;
+  background-color: midnightblue;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 30px;
+}
+.container div h3 p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
