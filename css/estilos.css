@@ -186,6 +186,12 @@ mi-caja label input[type=text] input[type=email] textarea input[type=submit]:hov
   background-color: rgb(233, 100, 11);
 }
 
+.mi-imagen {
+  flex: end;
+  width: 350px;
+  height: auto;
+}
+
 .servicio h1 {
   color: black;
   background-color: rgb(247, 118, 5);
