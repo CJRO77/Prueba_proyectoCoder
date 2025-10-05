@@ -64,7 +64,7 @@ body {
 .navbar-brand h1 {
   font-size: 22px;
   margin: 0;
-  color: #ddd;
+  color: white;
 }
 
 .nav-link {
@@ -92,8 +92,18 @@ body {
   padding: 50px;
 }
 
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(60, 77, 60);
+}
+
 .flex-container div {
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -124,11 +134,20 @@ body {
   color: #555;
 }
 
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
 .container-form div {
   flex: 1 1 300px;
-  background: #f8f8f8;
+  background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .container-form div h3 {
   background-color: black;
@@ -146,7 +165,7 @@ body {
   justify-content: center;
   text-decoration: none;
   color: blue;
-  margin: 10px;
+  margin: 0px;
 }
 
 .contenedor2 {
@@ -177,31 +196,32 @@ mi-caja {
   padding: 25px;
   margin: 10px 10px;
 }
-mi-caja label {
+
+label {
   color: white;
 }
-mi-caja label input[type=text] {
+label input[type=text] {
   width: 100%;
   padding: 10px;
   margin: 0.5rem 0;
   border-radius: 8px;
   border: 1px solid rgb(9, 9, 9);
 }
-mi-caja label input[type=text] input[type=email] {
+label input[type=text] input[type=email] {
   width: 100%;
   padding: 10px;
   margin: 0.5rem 0;
   border-radius: 8px;
   border: 1px solid rgb(9, 9, 9);
 }
-mi-caja label input[type=text] input[type=email] textarea {
+label input[type=text] input[type=email] textarea {
   width: 100%;
   padding: 10px;
   margin: 0.5rem 0;
   border-radius: 8px;
   border: 1px solid rgb(9, 9, 9);
 }
-mi-caja label input[type=text] input[type=email] textarea input[type=submit] {
+label input[type=text] input[type=email] textarea input[type=submit] {
   background-color: rgb(15, 14, 14);
   color: white;
   text-overflow: clip;
@@ -211,7 +231,7 @@ mi-caja label input[type=text] input[type=email] textarea input[type=submit] {
   cursor: pointer;
   transition: 0.5s;
 }
-mi-caja label input[type=text] input[type=email] textarea input[type=submit]:hover {
+label input[type=text] input[type=email] textarea input[type=submit]:hover {
   background-color: rgb(233, 100, 11);
 }
 
@@ -237,7 +257,7 @@ mi-caja label input[type=text] input[type=email] textarea input[type=submit]:hov
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 40px auto;
-  background: #fff;
+  background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -260,7 +280,7 @@ mi-caja label input[type=text] input[type=email] textarea input[type=submit]:hov
   margin-bottom: 15px;
 }
 
-.image div img {
+.image {
   flex: 1;
   min-height: 300px;
   background: url("../img/foto23.jpg") no-repeat center center/cover;
