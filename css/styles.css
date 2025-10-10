@@ -10,7 +10,9 @@ header {
 }
 
 .navbar-brand h1 {
-    font-size: 22px;
+    background-color: #FEBD1A;
+    font-family: "Anta", sans-serif;
+    font-size: 35px;
     margin: 0;
     color: black;
 }
@@ -26,12 +28,10 @@ header {
 }
 
 .btn:hover {
-    background-color: rgb(11, 45, 167);
-    color: white;
+    background-color: rgba(255, 165, 0, 0.5);
+    color: black;
     transition: 0.5s;
 }
-
-
 .flex-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,7 +39,7 @@ header {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    background-color: rgba(121, 121, 121, 0.8);
+    background-color: #888;
 }
 
 
@@ -97,17 +97,12 @@ body {
     background-attachment: fixed;
     background-color: #cccccc;
 }
-
-
-
-
 .contenedor {
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
     background: rgb(65, 64, 64);
 }
-
 
 li {
     color: rgb(247, 14, 14);
@@ -117,19 +112,23 @@ li {
     padding: 10px 10px;
 }
 
-
 .titulos {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: rgb(247, 118, 5);
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 5%;
-    padding: 50px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  display: flex;
+  align-items: flex-start; 
+  justify-content:space-between; 
+  padding: 40px;
 }
-
-
-
+.titulos P {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FEBD1A;
+  font-size: 1.7rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+   
+}
 
 .container-form {
     display: flex;
@@ -140,15 +139,16 @@ li {
     padding: 20px;
 }
 
-.container-form a {
+.container-form a  {
     text-decoration: none;
     color: blue;
     margin: 15px;
+    font-size: 20px;
 }
 
 .container-form h3 {
     color: black;
-    background-color: rgb(247, 118, 5);
+    background-color:#FEBD1A;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -162,9 +162,8 @@ li {
     background: whitesmoke;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
-
-
 
 @media (max-width: 768px) {
     .container-form {
@@ -173,17 +172,17 @@ li {
 }
 
 .contenedor2 {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 165, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
-}
+   }
 
 .container01 img {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
 
 
@@ -191,11 +190,12 @@ li {
 
 .mi-caja {
     flex: block;
-    min-width: 280px;
-    border: 5px solid whitesmoke;
+    min-width: 200px;
+    border: 5px solid  rgba(0, 0, 0, 0.6);
     border-radius: 8px;
     padding: 25px;
     margin: 10px 10px;
+    background-color: #888;
 
 
 }
@@ -223,18 +223,18 @@ li {
 }
 
 .mi-caja input[type="submit"]:hover {
-    background-color: rgb(11, 45, 167);
+    background-color:rgba(255, 165, 0, 0.5);
 }
 
 label {
-    color: whitesmoke
+    color: black
 }
 
 
 .servicios h1 {
 
     color: black;
-    background-color: rgb(247, 118, 5);
+    background-color: #FEBD1A;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -311,43 +311,32 @@ label {
     flex: end;
     width: 350px;
     height: auto;
-
-
 }
 
 footer {
 
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  background-color: #111;
 }
 
-footer a i {
-
-    color: white;
-    font-size: 40px;
-    transition: 0.5s;
+footer i {
+  font-size: 40px;
+  color: #888; /* gris neutro moderno */
+  transition: all 0.3s ease;
 }
 
-footer a i:hover {
-    color: rgb(11, 45, 167);
-    font-size: 40px;
+footer a:hover i {
+   transform: scale(1.2);
 }
+.bi-instagram:hover { color: #E1306C; } /* degradado simulado con un color moderno */
+.bi-facebook:hover  { color: #1877F2; }
+.bi-twitter-x:hover { color: #ebeced; }
+.bi-whatsapp:hover { color: #25D366; }
 
-.preguntas h1 {
-    color: black;
-    border-radius: 8px;
-    background-color: rgb(247, 118, 5);
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin: 30px;
-}
-
-.preguntas p {
+.servicios p {
     text-align: center;
     color: white;
     font-size: 30px;
@@ -367,7 +356,10 @@ footer a i:hover {
     border-radius: 8px;
     margin-bottom: 10px;
     overflow: hidden;
-    background: w;
+    transition: 0.5s ease;
+}
+.accordion-item:hover {
+    transform: scale(1.1);
 }
 
 .accordion-item input {
@@ -379,7 +371,7 @@ footer a i:hover {
     padding: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: rgb(247, 118, 5);
+    background:#888;
 }
 
 .accordion-content {
@@ -395,17 +387,6 @@ footer a i:hover {
     padding: 15px;
 }
 
-
-.text h3 {
-    color: white;
-    background-color: rgb(0, 0, 77);
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin: 30px;
-}
-
 .map-container {
     width: 100%;
     max-width: 600px;
@@ -416,6 +397,10 @@ footer a i:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     background-color: white;
     margin: 50px auto;
+    transition: 0.5s ease;
+}
+.map-container:hover {
+    transform: scale(1.1);
 }
 
 .map-container iframe {
@@ -425,19 +410,6 @@ footer a i:hover {
     border: 0;
 
 }
-
-
-.servicio h1 {
-    color: black;
-    background-color: rgb(247, 118, 5);
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin: 30px;
-    border-radius: 8px;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -446,7 +418,26 @@ footer a i:hover {
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2)));
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+}
+.text h3 {
+    color: black;
+    background-color:  #FEBD1A;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    font-size: 30px;
+    margin: 30px;
+}
+.nosotros {
+    flex: 1;
+    min-height: 300px;
+    background: url('../img/foto23.jpg') no-repeat center center/cover;
+    transition: 0.5s ease;
+}
+
+.nosotros:hover {
+    transform: scale(1.1);
 }
 
 .contacta h2 {
@@ -465,7 +456,7 @@ footer a i:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 30px;
-    color: whitesmoke;
+    color: #FEBD1A;
 }
 
 .text {
@@ -478,11 +469,6 @@ footer a i:hover {
     margin-bottom: 15px;
 }
 
-.image {
-    flex: 1;
-    min-height: 300px;
-    background: url('../img/foto23.jpg') no-repeat center center/cover;
-}
 
 @media (max-width: 768px) {
     .container {
