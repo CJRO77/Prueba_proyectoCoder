@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Libertinus+Serif+Display&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Libertinus+Serif+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios</title>
 </head>
@@ -48,7 +50,7 @@
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                            <button class="btn" type="submit">Buscar</button>
+                            <button class="btn" type="submit"><i class="bi bi-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -113,24 +115,21 @@
                 <a href="#"><img src="../img/auto detailing 3.png" class="mi-imagen"></a>
 
             </div>
-
             <div class="mi-caja">
                 <form>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" name="nombre" name="nombre"><br><br>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Your name here" required />
 
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="text" name="email" name="email"><br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email here" required />
 
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea name="mensaje" rows="4" cols="50"></textarea><br><br>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" rows="5" placeholder="Input Message Here"></textarea>
 
-                    <input type="submit" value="Enviar">
+                    <button type="submit">
+                        <i class="bi bi-send"></i> SOLICITAR UN SERVICIO </button>
             </div>
             </form>
-
-
-            </div>
         </section>
 
     </main>

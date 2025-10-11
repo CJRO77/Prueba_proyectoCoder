@@ -5,41 +5,57 @@
 }
 
 header {
-
-    background-color: white
+  background-color: #ff5100;
 }
 
 .navbar-brand h1 {
-    background-color: #FEBD1A;
+    background-color:  #ffbe0b;
+    display: flex;
+    border: 2px solid  #23293b;;
     font-family: "Anta", sans-serif;
     font-size: 35px;
     margin: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
     color: black;
 }
 
 .nav-link {
-    color: black !important;
+    color: white !important;
     font-size: 16px;
+}
+.nav-link:hover {
+    color: #000 !important;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.form-control {
+    border: 1px solid #000;
 }
 
 .btn {
+    
     background-color: white;
-    border: 1px solid rgb(14, 2, 2);
+    border: 1px solid #000;
+    color: #000;
 }
 
 .btn:hover {
-    background-color: rgba(255, 165, 0, 0.5);
-    color: black;
+    background-color:  #ffbe0b;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
     transition: 0.5s;
 }
 .flex-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    background-color: #888;
+    background-color: #23293b;
 }
 
 
@@ -122,7 +138,7 @@ li {
 }
 .titulos P {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #FEBD1A;
+  color: #ffbe0b;
   font-size: 1.7rem;
   padding: 15px 20px;
   border-radius: 10px;
@@ -148,7 +164,7 @@ li {
 
 .container-form h3 {
     color: black;
-    background-color:#FEBD1A;
+    background-color: #f9b000;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -195,7 +211,7 @@ li {
     border-radius: 8px;
     padding: 25px;
     margin: 10px 10px;
-    background-color: #888;
+    background-color: #23293b;
 
 
 }
@@ -204,37 +220,47 @@ li {
 .mi-caja input[type="email"],
 .mi-caja textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 0.5rem 0;
     border-radius: 8px;
     border: 1px solid rgb(9, 9, 9);
     ;
 }
 
-.mi-caja input[type="submit"] {
-    background-color: rgb(15, 14, 14);
-    color: white;
-    text-overflow: clip;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.5s;
+button {
+  width: 100%;
+  background-color: #ffbe0b;
+  color: #000;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.mi-caja input[type="submit"]:hover {
-    background-color:rgba(255, 165, 0, 0.5);
+button i {
+  margin-right: 8px;
 }
 
-label {
-    color: black
+button:hover {
+  background-color: #f9b000;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(255, 190, 11, 0.6);
 }
 
+label { 
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
 
 .servicios h1 {
 
     color: black;
-    background-color: #FEBD1A;
+    background-color:  #ffbe0b;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -324,14 +350,14 @@ footer {
 
 footer i {
   font-size: 40px;
-  color: #888; /* gris neutro moderno */
+  color: #888; 
   transition: all 0.3s ease;
 }
 
 footer a:hover i {
    transform: scale(1.2);
 }
-.bi-instagram:hover { color: #E1306C; } /* degradado simulado con un color moderno */
+.bi-instagram:hover { color: #E1306C; } 
 .bi-facebook:hover  { color: #1877F2; }
 .bi-twitter-x:hover { color: #ebeced; }
 .bi-whatsapp:hover { color: #25D366; }
@@ -352,7 +378,7 @@ footer a:hover i {
 }
 
 .accordion-item {
-    border: 1px solid rgb(150, 148, 148);
+    border: 1px solid  #000;
     border-radius: 8px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -371,7 +397,7 @@ footer a:hover i {
     padding: 15px;
     font-weight: bold;
     cursor: pointer;
-    background:#888;
+    background:  #23293b;
 }
 
 .accordion-content {
@@ -456,7 +482,7 @@ footer a:hover i {
     text-align: center;
     margin-bottom: 20px;
     font-size: 30px;
-    color: #FEBD1A;
+    color:  #ffbe0b;
 }
 
 .text {
