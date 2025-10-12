@@ -556,18 +556,3 @@ footer a:hover i {
         height: 250px;
     }
 }
-
-.language-switcher select {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.language-switcher select:hover {
-  background-color: #f0f0f0;
-}
