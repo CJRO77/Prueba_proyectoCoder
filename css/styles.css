@@ -37,7 +37,6 @@ header {
 }
 
 .btn {
-
     background-color: white;
     border: 1px solid #000;
     color: #000;
@@ -136,14 +135,7 @@ li {
     padding: 10px 10px;
 }
 
-.titulos {
-    flex-wrap: wrap;
-    max-width: 1200px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 40px;
-}
+.titulos {}
 
 .titulos P {
     background-color: rgba(0, 0, 0, 0.6);
@@ -165,13 +157,6 @@ li {
     background-color: #23293b;
 }
 
-.container-form h3 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    color: white;
-    border-radius: 8px;
-}
 
 .container-form p {
     color: black;
@@ -179,9 +164,9 @@ li {
 }
 
 .container-form a {
-    justify-content: center;
     text-decoration: none;
-    color: blue;
+    color: #130cf6;
+    font-weight: bold;
     margin: 15px;
     font-size: 20px;
 }
@@ -563,7 +548,7 @@ footer a:hover i {
         flex-direction: column;
     }
 
-    .image {
+    .nosotros {
         height: 250px;
     }
 }
@@ -573,7 +558,8 @@ footer a:hover i {
         flex-direction: column;
     }
 
-    .image {
-        height: 250px;
+    .nosotros {
+        height: 200px;
     }
+
 }

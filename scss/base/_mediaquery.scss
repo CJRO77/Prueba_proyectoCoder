@@ -1,34 +1,10 @@
-@media only screen and (max-width: 768px) {
-    .caja {
-        flex: 1 1 45%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .caja {
-        flex: 1 1 100%;
-    }
-}
-@media (max-width: 768px) {
-    .container-form {
-        flex-direction: column;
-    }
-}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
-   .image {
-       div img{ height: 250px;
-       }
-    }
 }
-@media (max-width: 480px) {
+    @media (max-width: 480px) {
     .container {
         flex-direction: column;
-    }
-    .image {
-       div img{ height: 250px;
-       }
     }
 }
