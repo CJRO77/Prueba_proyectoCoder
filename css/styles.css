@@ -12,7 +12,6 @@ header {
     background-color: #ffbe0b;
     display: flex;
     border: 2px solid #23293b;
-    ;
     font-family: "Anta", sans-serif;
     font-size: 35px;
     margin: 0;
@@ -77,14 +76,9 @@ header {
 
 .caja:hover {
     transform: scale(1.1);
-<<<<<<< HEAD
     box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
     -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
     -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
-    
-=======
-
->>>>>>> ramaprueba
 }
 
 .caja img {
@@ -142,18 +136,6 @@ li {
     padding: 10px 10px;
 }
 
-<<<<<<< HEAD
-
-.titulos p {
-    text-align: left;
-    text-decoration: none;
-    color: rgb(247, 118, 5);
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 5%;
-    padding: 50px;
-    
-=======
 .titulos {
     flex-wrap: wrap;
     max-width: 1200px;
@@ -161,7 +143,6 @@ li {
     align-items: flex-start;
     justify-content: space-between;
     padding: 40px;
->>>>>>> ramaprueba
 }
 
 .titulos P {
@@ -198,17 +179,12 @@ li {
 }
 
 .container-form a {
-    display: flex;
     justify-content: center;
     text-decoration: none;
     color: blue;
-<<<<<<< HEAD
-    margin: 10px;
-=======
     margin: 15px;
     font-size: 20px;
 }
->>>>>>> ramaprueba
 
 .container-form h3 {
     color: black;
@@ -279,10 +255,7 @@ li {
     margin: 0.5rem 0;
     border-radius: 8px;
     border: 1px solid rgb(9, 9, 9);
-<<<<<<< HEAD
-    
-=======
->>>>>>> ramaprueba
+
 }
 
 button {
@@ -579,14 +552,11 @@ footer a:hover i {
     margin-bottom: 15px;
 }
 
-<<<<<<< HEAD
 .image {
     flex: 1;
     min-height: 300px;
     background: url('../img/foto23.jpg') no-repeat center center/cover;
 }
-=======
->>>>>>> ramaprueba
 
 @media (max-width: 768px) {
     .container {
@@ -606,19 +576,4 @@ footer a:hover i {
     .image {
         height: 250px;
     }
-}
-
-.language-switcher select {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.language-switcher select:hover {
-  background-color: #f0f0f0;
 }
