@@ -156,21 +156,21 @@ li {
     background-color: #23293b;
 }
 
-
-.container-form p {
-    color: black;
-    margin: 30px;
-}
-
-.container-form a {
+.info-form a{
     text-decoration: none;
-    color: #130cf6;
+    color: blue;
     font-weight: bold;
     margin: 15px;
     font-size: 20px;
 }
+.info-form i{
+    text-decoration: none;
+    color: #ffbe0b;
+    margin: 15px;
+    font-size: 25px;
+}
 
-.container-form h3 {
+.info-form h3 {
     color: black;
     background-color: #f8f7f5;
     display: flex;
@@ -558,7 +558,7 @@ footer a:hover i {
     }
 
     .nosotros {
-        height: 200px;
+        height: 250px;
     }
 
 }
