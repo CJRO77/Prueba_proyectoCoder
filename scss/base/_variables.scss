@@ -1,0 +1,47 @@
+
+//VARIABLES
+
+$color-principal: #ff5100;
+$color-secundario: #23293b;
+$color-terciario: white;
+$fuente-principal: 'Anta', sans-serif;
+
+//lISTAS
+$colores: (#23293b, #ffbe0b, #f9b000);
+$fuentes: ("Anta", Arial, Helvetica);
+$tamaños: (16px, 20px, 24px);
+
+//EXTENDS
+%titulo {
+    background-color: #ffbe0b;
+    display: flex;
+    justify-content: center;
+}
+
+%caja {
+  background-color: $color-terciario;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+//MIXINS
+@mixin transicion($tiempo: 0.5s) {
+  transition: $tiempo ease;
+}
+
+@mixin boton($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

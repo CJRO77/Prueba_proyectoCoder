@@ -75,15 +75,16 @@ header {
 
 .caja:hover {
     transform: scale(1.1);
-    box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
-    -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
-    -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.98);
+    box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
+    -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
+    -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
 }
 
 .caja img {
     width: 100%;
     height: auto;
-    display: block;
+    margin-top: 15px;
+    
 }
 
 .caja h3 {
@@ -134,7 +135,14 @@ li {
     margin: 10px;
     padding: 10px 10px;
 }
-
+.titulos{
+    flex-wrap: wrap;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+}
 
 .titulos P {
     background-color: rgba(0, 0, 0, 0.6);
@@ -147,7 +155,7 @@ li {
 }
 
 .container-form {
-    flex: block;
+    display: block;
     min-width: 200px;
     border: 5px solid rgba(0, 0, 0, 0.6);
     border-radius: 8px;
@@ -285,14 +293,6 @@ label {
     border-radius: 8px;
 }
 
-.servicios p {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: auto;
-}
-
 .grid-container {
     margin: 10px;
     display: grid;
@@ -400,7 +400,7 @@ footer a:hover i {
 
 .servicios p {
     text-align: center;
-    color: white;
+    color: #ff5100;
     font-size: 30px;
     margin-top: 30;
     margin-bottom: 40px;
@@ -409,45 +409,62 @@ footer a:hover i {
 
 
 .accordion {
-    max-width: 70%;
-    margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.accordion-item {
-    border: 1px solid #000;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    transition: 0.5s ease;
+.accordion .accordion-item {
+  border-bottom: 1px solid #000;
 }
 
-.accordion-item:hover {
-    transform: scale(1.1);
+.accordion .accordion-item input[type="checkbox"] {
+  display: none;
 }
 
-.accordion-item input {
-    display: none;
+.accordion .accordion-item .accordion-title {
+  display: block;
+  background: #23293b;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
 }
 
-.accordion-title {
-    display: block;
-    padding: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    background: #23293b;
+.accordion .accordion-item .accordion-title:hover {
+  background: #2c354c; 
 }
 
-.accordion-content {
-    background-color: whitesmoke;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+.accordion .accordion-item .accordion-title::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.3rem;
 }
 
-.accordion-item input:checked~.accordion-content {
-    max-height: 200px;
-    padding: 15px;
+.accordion .accordion-item input:checked + .accordion-title::after {
+  content: "-";
+}
+
+.accordion .accordion-item .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion .accordion-item .accordion-content p {
+  padding: 0 1.5rem;
+}
+
+.accordion .accordion-item input:checked ~ .accordion-content {
+  max-height: 150px;
+  padding: 1rem 0;
 }
 
 .map-container {

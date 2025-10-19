@@ -1,6 +1,6 @@
+@use "../base/variables" as *;
 footer {
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     gap: 40px;
     padding: 20px 0;
     background-color: #111;
