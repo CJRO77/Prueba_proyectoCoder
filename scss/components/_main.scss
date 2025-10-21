@@ -5,6 +5,8 @@
 @use "../base/generales" as *;
 
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +60,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
+    margin: 0px;
+    
 
     p {
     background-color: rgba(0, 0, 0, 0.6);
@@ -67,12 +71,15 @@
     padding: 15px 20px;
     border-radius: 10px;
     max-width: 600px;
+    
+    
+    
     }
 }
 
 .flex-container {
    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
@@ -369,7 +376,7 @@ button{
 .espacio {
     p{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: nth($tamaños, 3);
     font-size: 30px;
     color: #ffbe0b;
     }
@@ -378,7 +385,7 @@ button{
 .grid-container {
   margin: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-auto-rows: 250px;
   gap: 20px;
 
@@ -401,11 +408,10 @@ button{
       background-color: rgba(255, 0, 0, 0.5);
       position: absolute;
       bottom: 0;
-      text-align: center;
       color: white;
       padding: 22px;
-      font-size: 20px;
       width: 100%;
+      @extend %titulo-base;
     }
   }
 
