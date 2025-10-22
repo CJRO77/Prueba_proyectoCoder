@@ -66,6 +66,28 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .nosotros {
+    min-height: 250px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .nosotros {
+    min-height: 200px;
+    background-position: top center;
+  }
+}
 footer {
   gap: 40px;
   padding: 20px 0;
@@ -212,12 +234,16 @@ header {
 }
 
 .container-form {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
   min-width: 200px;
   border: 5px solid rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   padding: 25px;
-  margin: 10px 10px;
+  margin: 10px;
   background-color: #23293b;
 }
 
@@ -233,6 +259,7 @@ header {
   background-color: rgba(255, 190, 11, 0.6);
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: Arial;
   font-size: 30px;
   font-weight: bold;
@@ -241,21 +268,22 @@ header {
 }
 .info-form a {
   text-decoration: none;
-  text-align: center;
   color: blue;
   font-weight: bold;
-  margin: 15px;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
 }
 .info-form a i {
-  text-decoration: none;
   color: #ffbe0b;
-  margin: 15px;
   font-size: 25px;
 }
-.info-form a i p {
+.info-form p {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -378,13 +406,16 @@ label {
 }
 
 .nosotros {
-  flex: 1;
+  flex: 1 1 400px;
+  width: 100%;
   min-height: 300px;
-  background: url("../img/equipo.jpg") no-repeat center center/cover;
+  background: url("../img/equipo.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
   transition: 0.5s ease;
 }
 .nosotros:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .servicios h1 {

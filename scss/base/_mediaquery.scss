@@ -34,3 +34,27 @@
         flex-direction: column;
     }
 }
+@media (max-width: 768px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .nosotros {
+    min-height: 250px; 
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros {
+    min-height: 200px; 
+    background-position: top center; 
+  }
+}
