@@ -46,15 +46,10 @@
   }
 }
 @media (max-width: 768px) {
-  .nosotros {
-    min-height: 250px; 
-    border-radius: 8px;
+   .nosotros {
+    flex-direction: column;
+     order: 2;
+      min-height: 200px;
+    }
+  
   }
-}
-
-@media (max-width: 480px) {
-  .nosotros {
-    min-height: 200px; 
-    background-position: top center; 
-  }
-}
