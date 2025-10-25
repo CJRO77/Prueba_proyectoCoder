@@ -129,70 +129,60 @@
     height: auto;
     margin-top: 15px;
 }
-.container-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  min-width: 200px;
-  border: 5px solid rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  padding: 25px;
-  margin: 10px;
-  background-color: #23293b;
-}
 
-.info-form {
-  flex: 1 1 300px;
-  background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 10px;
+.contacto {
+  background-color:rgba(128, 128, 128, 0.5);
+  padding: 50px 20px;
   text-align: center;
-
-  h3 {
-    color: black;
-    background-color: rgba(255, 190, 11, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: nth($fuentes, 2);
-    font-size: 30px;
-    font-weight: bold;
-    margin: 30px;
-    border-radius: 8px;
-  }
-
-  a {
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
-
-    i {
-      color: #2a2107;
-      font-size: 25px;
-      
-
-      
-    }
-  }
-
-  p {
-    color: black;
-    font-size: 18px;
-    margin-bottom: nth($tamaños, 2);
-  }
+  border-top: 8px solid#FFD700;
+  border-bottom: 8px solid#FFD700;
 }
 
+.contacto h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.info-contacto {
+  margin-top: 25px;
+}
+
+.info-contacto p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.info-contacto i {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.info-contacto a {
+  color: #0016ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-contacto a:hover {
+  text-decoration: underline;
+}
 
 .contenedor2 {
-    background-color: rgba(207, 199, 186, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
