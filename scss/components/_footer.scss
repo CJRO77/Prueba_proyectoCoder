@@ -1,8 +1,8 @@
 @use "../base/variables" as *;
 footer {
     @extend %flex-center;
-    gap: 40px;
-    padding: 20px 0;
+    gap: 25px;
+    padding: 20px 0px;
     background-color: #111;
     a{
         &:hover{
@@ -33,4 +33,10 @@ footer {
 
 .bi-whatsapp:hover {
     color: #25D366;
+}
+.bi-linkedin:hover {
+    color: #0e76a8;
+}
+.bi-youtube:hover {
+    color: #ff0000;
 }

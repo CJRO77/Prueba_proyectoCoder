@@ -131,7 +131,7 @@
 }
 
 .contacto {
-  background-color:rgba(128, 128, 128, 0.5);
+  background: linear-gradient(to right, #FFFFFF, #EFEFEF);
   padding: 50px 20px;
   text-align: center;
   border-top: 8px solid#FFD700;
@@ -139,15 +139,15 @@
 }
 
 .contacto h2 {
+  background-color: $color-secundario;
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #FFD700;
   margin-bottom: 15px;
 }
 
 .contacto p {
-  color: black;
-  font-weight: bold;
+  color: #0a0a0a;
   font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -166,13 +166,13 @@
 }
 
 .info-contacto i {
-  color: white;
+  color:  #ff0000;
   font-weight: bolder;
   font-size: 1.4rem;
 }
 
 .info-contacto a {
-  color: #0016ff;
+  color: #00296b;
   text-decoration: none;
   font-weight: 600;
 }
@@ -227,7 +227,7 @@
 button{
      width: 100%;
     background-color: #ffbe0b;
-    color: #000;
+    color: #0a0a0a;
     border: none;
     padding: 14px;
     font-size: 15px;
