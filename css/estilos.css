@@ -92,7 +92,7 @@ footer a:hover {
 }
 footer a i {
   font-size: 40px;
-  color: #7d7d7d;
+  color: whitesmoke;
   transition: all 0.3s ease;
 }
 footer a i:hover {
@@ -115,9 +115,17 @@ footer a i:hover {
   color: #25D366;
 }
 
+.bi-linkedin:hover {
+  color: #0077B5;
+}
+
+.bi-youtube:hover {
+  color: #FF0000;
+}
+
 header {
-  background-color: #ff5100;
-  padding: 1rem;
+  background-color: #0a0a0a;
+  border-bottom: 8px solid #FFD700;
 }
 
 * {
@@ -126,28 +134,23 @@ header {
 }
 
 .navbar-brand h1 {
-  background-color: #ffbe0b;
+  background-color: #FFD700;
   display: flex;
-  border: 2px solid #23293b;
+  border: 2px solid #0a0a0a;
   font-family: "Anta";
   font-size: 35px;
   margin: 0;
   padding: 10px 15px;
   border-radius: 8px;
-  color: black;
-}
-
-.navbar-brand img {
-  height: 50px;
-  width: auto;
+  color: #0a0a0a;
 }
 
 .nav-link {
-  color: white !important;
+  color: #ffffff !important;
   font-size: 16px;
 }
 .nav-link:hover {
-  color: #000 !important;
+  color: #FF0000 !important;
   font-size: 17px;
   font-weight: 600;
   transition: 0.5s;
@@ -233,7 +236,7 @@ header {
 }
 
 .contacto {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 50px 20px;
   text-align: center;
   border-top: 8px solid #FFD700;
@@ -274,7 +277,7 @@ header {
 }
 
 .info-contacto a {
-  color: #0016ff;
+  color: #FFD700;
   text-decoration: none;
   font-weight: 600;
 }

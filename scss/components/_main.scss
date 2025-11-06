@@ -14,27 +14,23 @@
 
 
 .navbar-brand h1 {
-    background-color: #ffbe0b;
+    background-color:#FFD700;
     display: flex;
-    border: 2px solid #23293b;
+    border: 2px solid  #0a0a0a;
     font-family: nth($fuentes, 1);
     font-size: 35px;
     margin: 0;
     padding: 10px 15px;
     border-radius: 8px;
-    color: black;
-}
-.navbar-brand img {
-  height: 50px;
-  width: auto;
+    color:  #0a0a0a;
 }
 
 .nav-link {
-    color: white!important;
+    color: #ffffff!important;
     font-size: 16px;
 
     &:hover {
-    color: #000 !important;
+    color: #FF0000!important;
     font-size: 17px;
     font-weight: 600;
     transition: 0.5s;
@@ -135,7 +131,7 @@
 }
 
 .contacto {
-  background-color:rgba(128, 128, 128, 0.5);
+  background-color: rgba(255, 255, 255, 0.5); 
   padding: 50px 20px;
   text-align: center;
   border-top: 8px solid#FFD700;
@@ -176,7 +172,7 @@
 }
 
 .info-contacto a {
-  color: #0016ff;
+  color: #FFD700;
   text-decoration: none;
   font-weight: 600;
 }

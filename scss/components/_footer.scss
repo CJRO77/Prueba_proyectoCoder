@@ -11,7 +11,7 @@ footer {
 
         i{
     font-size: 40px;
-    color:  #7d7d7d;
+    color:  whitesmoke;
     transition: all 0.3s ease;
     &:hover{
          transform: scale(1.2);
@@ -33,4 +33,10 @@ footer {
 
 .bi-whatsapp:hover {
     color: #25D366;
+}
+.bi-linkedin:hover {
+    color: #0077B5;
+}
+.bi-youtube:hover {
+    color: #FF0000;
 }
