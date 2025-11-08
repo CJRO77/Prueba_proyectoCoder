@@ -1,26 +1,29 @@
 @use "../base/variables" as *;
 footer {
     @extend %flex-center;
-    gap: 40px;
-    padding: 20px 0;
-    background-color: #111;
-    a{
-        &:hover{
-            transform: scale(1.2);
-        }
-
-        i{
-    font-size: 40px;
-    color:  whitesmoke;
-    transition: all 0.3s ease;
-    &:hover{
-         transform: scale(1.2);
-        }
-    }
-    }
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #111;
 }
-.bi-instagram:hover {
-    color: #E1306C;
+
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
+
+footer i {
+  font-size: 40px;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
 }
 
 .bi-facebook:hover {

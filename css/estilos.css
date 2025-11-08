@@ -82,25 +82,80 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .flex-container {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  .flex-container .caja {
+    padding: 15px;
+  }
+  .flex-container .caja h3 {
+    font-size: 1rem;
+  }
+  .flex-container .caja p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .flex-container {
+    grid-template-columns: 1fr;
+    padding: 20px 8px;
+  }
+  .flex-container .caja {
+    padding: 12px;
+  }
+  .flex-container .caja h3 {
+    font-size: 0.95rem;
+  }
+  .flex-container .caja p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px 10px;
+  }
+  footer i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    gap: 20px;
+    padding: 5px 5px;
+  }
+  footer i {
+    font-size: 26px;
+  }
+}
 footer {
-  gap: 40px;
-  padding: 20px 0;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px 0;
   background-color: #111;
 }
+
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
 footer a:hover {
   transform: scale(1.2);
 }
-footer a i {
+
+footer i {
   font-size: 40px;
   color: whitesmoke;
   transition: all 0.3s ease;
 }
-footer a i:hover {
-  transform: scale(1.2);
-}
 
-.bi-instagram:hover {
-  color: #E1306C;
+footer i:hover {
+  transform: scale(1.2);
 }
 
 .bi-facebook:hover {
@@ -125,7 +180,7 @@ footer a i:hover {
 
 header {
   background-color: #0a0a0a;
-  border-bottom: 8px solid #FFD700;
+  border-bottom: 8px solid rgba(255, 0, 0, 0.5);
 }
 
 * {
@@ -147,7 +202,7 @@ header {
 
 .nav-link {
   color: #ffffff !important;
-  font-size: 16px;
+  font-size: 18px;
 }
 .nav-link:hover {
   color: #FF0000 !important;
@@ -193,15 +248,15 @@ header {
 
 .flex-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #23293b;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box;
 }
-
-.flex-container div {
+.flex-container .caja {
   background-color: whitesmoke;
   border-radius: 8px;
   overflow: hidden;
@@ -211,28 +266,26 @@ header {
   padding: 15px 10px;
   transition: 0.5s ease;
 }
-.flex-container div:hover {
-  transform: scale(1.1);
-  box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-  -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-  -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
+.flex-container .caja:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
-.flex-container div h3 {
-  text-align: center;
+.flex-container .caja h3 {
   font-weight: bold;
-  margin: 15px 10px;
-  padding: 10px 10px;
+  margin: 10px 0;
+  color: #111;
 }
-.flex-container div h3 p {
-  margin: 0 0 15px;
-  padding: 0 10px;
+.flex-container .caja h3 p {
+  font-size: 0.95rem;
   color: #555;
+  margin: 0 10px 15px;
 }
 
 .flex-container img {
   max-width: 100%;
   height: auto;
-  margin-top: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .contacto {
@@ -392,7 +445,7 @@ label {
 }
 .container div h3 {
   color: black;
-  background-color: #FEBD1A;
+  background-color: rgba(255, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   font-family: "Anta", sans-serif;

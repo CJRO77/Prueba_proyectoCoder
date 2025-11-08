@@ -27,7 +27,7 @@
 
 .nav-link {
     color: #ffffff!important;
-    font-size: 16px;
+    font-size: 18px;
 
     &:hover {
     color: #FF0000!important;
@@ -78,17 +78,17 @@
 }
 
 .flex-container {
-   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #23293b;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0; 
+  background-color: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box; 
 
-.flex-container {
-    div {
+
+.caja {
     background-color: whitesmoke;
     border-radius: 8px;
     overflow: hidden;
@@ -98,24 +98,21 @@
     padding: 15px 10px;
     @include transicion($tiempo: 0.5s);
 
-     &:hover{
-    transform: scale(1.1);
-    box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-    -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-    -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-     }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
   
 
             h3 {
-    text-align: center;
-    font-weight: bold;
-    margin: 15px 10px;
-    padding: 10px 10px; 
+      font-weight: bold;
+      margin: 10px 0;
+      color: #111;
 
                 p {
-    margin: 0 0 15px;
-    padding: 0 10px;
-    color: #555;   
+   font-size: 0.95rem;
+      color: #555;
+      margin: 0 10px 15px;  
 
                 }
             
@@ -125,10 +122,13 @@
 }
 
 .flex-container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 15px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
 }
+
+
 
 .contacto {
   background-color: rgba(255, 255, 255, 0.5); 
@@ -296,7 +296,7 @@ button{
 
         h3{
     color: black;
-    background-color: #FEBD1A;
+    background-color: rgba(255, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     font-family: "Anta", sans-serif;
