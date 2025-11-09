@@ -158,6 +158,10 @@ footer i:hover {
   transform: scale(1.2);
 }
 
+.bi-instagram:hover {
+  color: #e1306c;
+}
+
 .bi-facebook:hover {
   color: #1877F2;
 }
@@ -191,7 +195,7 @@ header {
 .navbar-brand h1 {
   background-color: #FFD700;
   display: flex;
-  border: 2px solid #0a0a0a;
+  border: 2px solid #ff0000;
   font-family: "Anta";
   font-size: 35px;
   margin: 0;
@@ -300,6 +304,7 @@ header {
   font-size: 2rem;
   font-weight: bold;
   color: white;
+  background-color: rgba(255, 0, 0, 0.5);
   margin-bottom: 15px;
 }
 
