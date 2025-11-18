@@ -150,7 +150,7 @@ footer a:hover {
 
 footer i {
   font-size: 40px;
-  color: whitesmoke;
+  color: #6c757d;
   transition: all 0.3s ease;
 }
 
@@ -183,7 +183,7 @@ footer i:hover {
 }
 
 header {
-  background-color: #0a0a0a;
+  background-color: #6c757d;
   border-bottom: 8px solid rgba(255, 0, 0, 0.5);
 }
 
@@ -195,7 +195,7 @@ header {
 .navbar-brand h1 {
   background-color: #FFD700;
   display: flex;
-  border: 2px solid #ff0000;
+  border: 2px solid #0a0a0a;
   font-family: "Anta";
   font-size: 35px;
   margin: 0;
@@ -209,7 +209,7 @@ header {
   font-size: 18px;
 }
 .nav-link:hover {
-  color: #FF0000 !important;
+  color: #0a0a0a !important;
   font-size: 17px;
   font-weight: 600;
   transition: 0.5s;
@@ -329,19 +329,20 @@ header {
 }
 
 .info-contacto i {
-  color: white;
+  color: #FFD700;
   font-weight: bolder;
   font-size: 1.4rem;
 }
 
 .info-contacto a {
-  color: #FFD700;
+  color: #0016ff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-contacto a:hover {
   text-decoration: underline;
+  color: #FFD700;
 }
 
 .contenedor2 {
@@ -584,9 +585,6 @@ label {
   font-weight: 500;
   position: relative;
   transition: background 0.5s;
-}
-.accordion .accordion-item .accordion-title:hover {
-  background: #ff5100;
 }
 .accordion .accordion-item .accordion-title::after {
   content: "+";

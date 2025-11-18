@@ -16,7 +16,7 @@
 .navbar-brand h1 {
     background-color:#FFD700;
     display: flex;
-    border: 2px solid  #ff0000;
+    border: 2px solid  #0a0a0a;
     font-family: nth($fuentes, 1);
     font-size: 35px;
     margin: 0;
@@ -30,7 +30,7 @@
     font-size: 18px;
 
     &:hover {
-    color: #FF0000!important;
+    color: #0a0a0a!important;
     font-size: 17px;
     font-weight: 600;
     transition: 0.5s;
@@ -167,19 +167,21 @@
 }
 
 .info-contacto i {
-  color: white;
+  color:#FFD700;
   font-weight: bolder;
   font-size: 1.4rem;
 }
 
 .info-contacto a {
-  color: #FFD700;
+  color: #0016ff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-contacto a:hover {
   text-decoration: underline;
+  color:#FFD700;
+
 }
 
 .contenedor2 {
@@ -449,10 +451,7 @@ button{
     position: relative;
     transition: background 0.5s;
 
-      &:hover {
-        background:  #ff5100;
-      }
-
+  
       &::after {
         content: "+";
         position: absolute;
