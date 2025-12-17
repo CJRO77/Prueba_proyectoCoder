@@ -183,7 +183,7 @@ footer i:hover {
 }
 
 header {
-  background-color: #6c757d;
+  background-color: #111;
   border-bottom: 8px solid rgba(255, 0, 0, 0.5);
 }
 
@@ -207,11 +207,12 @@ header {
 .nav-link {
   color: #ffffff !important;
   font-size: 18px;
+  font-weight: bold;
 }
 .nav-link:hover {
-  color: #0a0a0a !important;
+  color: #ffbe0b !important;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: bold;
   transition: 0.5s;
 }
 
@@ -293,7 +294,7 @@ header {
 }
 
 .contacto {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #1f2124;
   padding: 50px 20px;
   text-align: center;
   border-top: 8px solid #FFD700;
@@ -309,7 +310,7 @@ header {
 }
 
 .contacto p {
-  color: black;
+  color: rgb(137, 174, 250);
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 1.6;
@@ -335,7 +336,7 @@ header {
 }
 
 .info-contacto a {
-  color: #0016ff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
