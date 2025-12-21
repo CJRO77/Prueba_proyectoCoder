@@ -123,6 +123,19 @@ body {
     font-size: 30px;
   }
 }
+@media (max-width: 900px) {
+  .contacto-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .contacto-img.izquierda,
+  .contacto-img.derecha {
+    order: 2;
+  }
+  .contacto-centro {
+    order: 1;
+  }
+}
 @media (max-width: 400px) {
   footer {
     gap: 20px;
@@ -137,6 +150,7 @@ footer {
   gap: 30px;
   padding: 15px 0;
   background-color: #111;
+  border-top: 1px solid #333;
 }
 
 footer a {
@@ -174,17 +188,13 @@ footer i:hover {
   color: #25D366;
 }
 
-.bi-linkedin:hover {
-  color: #0077B5;
-}
-
 .bi-youtube:hover {
   color: #FF0000;
 }
 
 header {
   background-color: #111;
-  border-bottom: 8px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 1px solid #333;
 }
 
 * {
@@ -293,57 +303,46 @@ header {
   margin-bottom: 10px;
 }
 
-.contacto {
-  background-color: #1f2124;
-  padding: 50px 20px;
-  text-align: center;
-  border-top: 8px solid #FFD700;
-  border-bottom: 8px solid #FFD700;
-}
-
-.contacto h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  background-color: rgba(255, 0, 0, 0.5);
-  margin-bottom: 15px;
-}
-
-.contacto p {
-  color: rgb(137, 174, 250);
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.info-contacto {
-  margin-top: 25px;
-}
-
-.info-contacto p {
-  display: flex;
+.contacto-layout {
+  display: grid;
+  background-color: #23293b;
+  border: 1px solid #ffffff;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  gap: 30px;
+  margin: 20px auto;
+}
+
+.contacto-centro {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contacto-img {
+  display: flex;
   justify-content: center;
-  gap: 10px;
-  font-size: 1.2rem;
 }
 
-.info-contacto i {
-  color: #FFD700;
-  font-weight: bolder;
-  font-size: 1.4rem;
+.contacto-img img {
+  width: 40%;
+  max-width: 220px;
+  border-radius: 20px;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
 }
 
-.info-contacto a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
+.contacto-img img:hover {
+  transform: translateY(-8px);
 }
 
-.info-contacto a:hover {
-  text-decoration: underline;
-  color: #FFD700;
+.contacto-img.izquierda img {
+  max-width: 300px;
+}
+
+.contacto-img.derecha img {
+  max-width: 200px;
 }
 
 .contenedor2 {

@@ -104,6 +104,22 @@
   }
 }
 
+@media (max-width: 900px) {
+  .contacto-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contacto-img.izquierda,
+  .contacto-img.derecha {
+    order: 2;
+  }
+
+  .contacto-centro {
+    order: 1;
+  }
+}
+
 
 @media (max-width: 400px) {
   footer {
