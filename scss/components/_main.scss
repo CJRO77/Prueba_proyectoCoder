@@ -16,7 +16,7 @@
 .navbar-brand h1 {
     background-color:#FFD700;
     display: flex;
-    border: 2px solid  #0a0a0a;
+    border: 2px solid  #FF0000;
     font-family: nth($fuentes, 1);
     font-size: 35px;
     margin: 0;
@@ -24,6 +24,13 @@
     border-radius: 8px;
     color:  #0a0a0a;
 }
+.navbar-brand h1:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+  box-shadow: #ffffff 0px 0px 10px;
+}
+
+
 
 .nav-link {
     color: #ffffff!important;
@@ -273,7 +280,7 @@ button{
     background-color: rgba(255, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    font-family: "Anta", sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
     margin: 30px;
 
