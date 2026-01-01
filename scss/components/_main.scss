@@ -14,25 +14,33 @@
 
 
 .navbar-brand h1 {
-    background-color: #ffbe0b;
+    background-color:#FFD700;
     display: flex;
-    border: 2px solid #23293b;
+    border: 2px solid  #FF0000;
     font-family: nth($fuentes, 1);
     font-size: 35px;
     margin: 0;
     padding: 10px 15px;
     border-radius: 8px;
-    color: black;
+    color:  #0a0a0a;
+}
+.navbar-brand h1:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+  box-shadow: #ffffff 0px 0px 10px;
 }
 
+
+
 .nav-link {
-    color: white!important;
-    font-size: 16px;
+    color: #ffffff!important;
+    font-size: 18px;
+    font-weight: bold;
 
     &:hover {
-    color: #000 !important;
+    color: #ffbe0b !important;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: bold;
     transition: 0.5s;
     }
 }
@@ -78,17 +86,17 @@
 }
 
 .flex-container {
-   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #23293b;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0; 
+  background-color: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box; 
 
-.flex-container {
-    div {
+
+.caja {
     background-color: whitesmoke;
     border-radius: 8px;
     overflow: hidden;
@@ -98,24 +106,21 @@
     padding: 15px 10px;
     @include transicion($tiempo: 0.5s);
 
-     &:hover{
-    transform: scale(1.1);
-    box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-    -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-    -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-     }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
   
 
             h3 {
-    text-align: center;
-    font-weight: bold;
-    margin: 15px 10px;
-    padding: 10px 10px; 
+      font-weight: bold;
+      margin: 10px 0;
+      color: #111;
 
                 p {
-    margin: 0 0 15px;
-    padding: 0 10px;
-    color: #555;   
+   font-size: 0.95rem;
+      color: #555;
+      margin: 0 10px 15px;  
 
                 }
             
@@ -125,12 +130,14 @@
 }
 
 .flex-container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 15px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
 }
 
 .contacto {
+<<<<<<< HEAD
   background: linear-gradient(to right, #FFFFFF, #EFEFEF);
   padding: 50px 20px;
   text-align: center;
@@ -158,14 +165,28 @@
 }
 
 .info-contacto p {
+=======
+>>>>>>> ramatesteo
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 1.2rem;
+  align-items: center;
+  background-color:rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid #333;
+  padding: 3rem 1rem;
+}
+
+.contacto-centro {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+
+
 }
 
 .info-contacto i {
+<<<<<<< HEAD
   color:  #ff0000;
   font-weight: bolder;
   font-size: 1.4rem;
@@ -179,6 +200,12 @@
 
 .info-contacto a:hover {
   text-decoration: underline;
+=======
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffbe0b;
+
+>>>>>>> ramatesteo
 }
 
 .contenedor2 {
@@ -296,10 +323,10 @@ button{
 
         h3{
     color: black;
-    background-color: #FEBD1A;
+    background-color: rgba(255, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    font-family: "Anta", sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
     margin: 30px;
 
@@ -448,10 +475,7 @@ button{
     position: relative;
     transition: background 0.5s;
 
-      &:hover {
-        background:  #ff5100;
-      }
-
+  
       &::after {
         content: "+";
         position: absolute;

@@ -82,25 +82,105 @@ body {
     text-align: center;
   }
 }
+<<<<<<< HEAD
 footer {
   gap: 25px;
   padding: 20px 0px;
   background-color: #111;
+=======
+@media (max-width: 768px) {
+  .flex-container {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  .flex-container .caja {
+    padding: 15px;
+  }
+  .flex-container .caja h3 {
+    font-size: 1rem;
+  }
+  .flex-container .caja p {
+    font-size: 0.9rem;
+  }
+>>>>>>> ramatesteo
 }
+@media (max-width: 480px) {
+  .flex-container {
+    grid-template-columns: 1fr;
+    padding: 20px 8px;
+  }
+  .flex-container .caja {
+    padding: 12px;
+  }
+  .flex-container .caja h3 {
+    font-size: 0.95rem;
+  }
+  .flex-container .caja p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px 10px;
+  }
+  footer i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .contacto-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .contacto-img.izquierda,
+  .contacto-img.derecha {
+    order: 2;
+  }
+  .contacto-centro {
+    order: 1;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    gap: 20px;
+    padding: 5px 5px;
+  }
+  footer i {
+    font-size: 26px;
+  }
+}
+footer {
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #111;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
 footer a:hover {
   transform: scale(1.2);
 }
-footer a i {
+
+footer i {
   font-size: 40px;
-  color: #7d7d7d;
+  color: #6c757d;
   transition: all 0.3s ease;
 }
-footer a i:hover {
+
+footer i:hover {
   transform: scale(1.2);
 }
 
 .bi-instagram:hover {
-  color: #E1306C;
+  color: #e1306c;
 }
 
 .bi-facebook:hover {
@@ -115,17 +195,22 @@ footer a i:hover {
   color: #25D366;
 }
 
+<<<<<<< HEAD
 .bi-linkedin:hover {
   color: #0e76a8;
 }
 
 .bi-youtube:hover {
   color: #ff0000;
+=======
+.bi-youtube:hover {
+  color: #FF0000;
+>>>>>>> ramatesteo
 }
 
 header {
-  background-color: #ff5100;
-  padding: 1rem;
+  background-color: #111;
+  border-bottom: 1px solid #333;
 }
 
 * {
@@ -134,25 +219,32 @@ header {
 }
 
 .navbar-brand h1 {
-  background-color: #ffbe0b;
+  background-color: #FFD700;
   display: flex;
-  border: 2px solid #23293b;
-  font-family: "Anta";
+  border: 2px solid #FF0000;
+  font-family: "Racing Sans One";
   font-size: 35px;
   margin: 0;
   padding: 10px 15px;
   border-radius: 8px;
-  color: black;
+  color: #0a0a0a;
+}
+
+.navbar-brand h1:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+  box-shadow: #ffffff 0px 0px 10px;
 }
 
 .nav-link {
-  color: white !important;
-  font-size: 16px;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: bold;
 }
 .nav-link:hover {
-  color: #000 !important;
+  color: #ffbe0b !important;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: bold;
   transition: 0.5s;
 }
 
@@ -193,15 +285,15 @@ header {
 
 .flex-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #23293b;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box;
 }
-
-.flex-container div {
+.flex-container .caja {
   background-color: whitesmoke;
   border-radius: 8px;
   overflow: hidden;
@@ -211,27 +303,25 @@ header {
   padding: 15px 10px;
   transition: 0.5s ease;
 }
-.flex-container div:hover {
-  transform: scale(1.1);
-  box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-  -webkit-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
-  -moz-box-shadow: -17px 16px 5px -2px rgba(110, 106, 100, 0.103);
+.flex-container .caja:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
-.flex-container div h3 {
-  text-align: center;
+.flex-container .caja h3 {
   font-weight: bold;
-  margin: 15px 10px;
-  padding: 10px 10px;
+  margin: 10px 0;
+  color: #111;
 }
-.flex-container div h3 p {
-  margin: 0 0 15px;
-  padding: 0 10px;
+.flex-container .caja h3 p {
+  font-size: 0.95rem;
   color: #555;
+  margin: 0 10px 15px;
 }
 
 .flex-container img {
   max-width: 100%;
   height: auto;
+<<<<<<< HEAD
   margin-top: 15px;
 }
 
@@ -255,22 +345,31 @@ header {
   color: #0a0a0a;
   font-size: 1.3rem;
   line-height: 1.6;
+=======
+  border-radius: 6px;
+>>>>>>> ramatesteo
   margin-bottom: 10px;
 }
 
-.info-contacto {
-  margin-top: 25px;
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid #333;
+  padding: 3rem 1rem;
 }
 
-.info-contacto p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 1.2rem;
+.contacto-centro {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
 }
 
 .info-contacto i {
+<<<<<<< HEAD
   color: #ff0000;
   font-weight: bolder;
   font-size: 1.4rem;
@@ -284,6 +383,11 @@ header {
 
 .info-contacto a:hover {
   text-decoration: underline;
+=======
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ffbe0b;
+>>>>>>> ramatesteo
 }
 
 .contenedor2 {
@@ -392,10 +496,10 @@ label {
 }
 .container div h3 {
   color: black;
-  background-color: #FEBD1A;
+  background-color: rgba(255, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  font-family: "Anta", sans-serif;
+  font-family: sans-serif;
   font-size: 30px;
   margin: 30px;
 }
@@ -526,9 +630,6 @@ label {
   font-weight: 500;
   position: relative;
   transition: background 0.5s;
-}
-.accordion .accordion-item .accordion-title:hover {
-  background: #ff5100;
 }
 .accordion .accordion-item .accordion-title::after {
   content: "+";

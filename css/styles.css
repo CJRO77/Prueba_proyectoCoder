@@ -5,29 +5,30 @@
 }
 
 header {
-    background-color: #ff5100;
-    padding: 1rem;
+    background-color: #6c757d;
+    border-bottom: 8px solid rgba(255, 0, 0, 0.5);
 }
 
+
 .navbar-brand h1 {
-    background-color: #ffbe0b;
+    background-color: #FFD700;
     display: flex;
-    border: 2px solid #23293b;
+    border: 2px solid #0a0a0a;
     font-family: "Anta", sans-serif;
     font-size: 35px;
     margin: 0;
     padding: 10px 15px;
     border-radius: 8px;
-    color: black;
+    color: #0a0a0a;
 }
 
 .nav-link {
-    color: white !important;
-    font-size: 16px;
+    color: #ffffff !important;
+    font-size: 18px;
 }
 
 .nav-link:hover {
-    color: #000 !important;
+    color: #0a0a0a !important;
     font-size: 17px;
     font-weight: 600;
     transition: 0.5s;
@@ -169,6 +170,7 @@ li {
   font-size: 2rem;
   font-weight: bold;
   color: white;
+  background-color: rgba(255, 0, 0, 0.5);
   margin-bottom: 15px;
 }
 
@@ -193,7 +195,7 @@ li {
 }
 
 .info-contacto i {
-  color: white;
+  color: #FFD700;
   font-weight: bolder;
   font-size: 1.4rem;
 }
@@ -201,11 +203,12 @@ li {
 .info-contacto a {
   color: #0016ff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-contacto a:hover {
   text-decoration: underline;
+  color:#FFD700;
 }
 
   
@@ -220,7 +223,7 @@ li {
   }
 }
 .contenedor2 {
-    background-color: rgba(207, 199, 186, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -376,15 +379,19 @@ footer {
 
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 20px 0;
+    gap: 30px;
+    padding: 15px 0;
     background-color: #111;
 }
 
 footer i {
     font-size: 40px;
-    color: #ffbe0b;
+    color:  #6c757d;
     transition: all 0.3s ease;
+}
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 footer a:hover i {
@@ -405,6 +412,12 @@ footer a:hover i {
 
 .bi-whatsapp:hover {
     color: #25D366;
+}
+.bi-linkedin:hover {
+    color: #0077B5;
+}
+.bi-youtube:hover {
+    color: #FF0000;
 }
 
 .servicios p {
@@ -444,7 +457,7 @@ footer a:hover i {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    transition: background 0.3s;
+    transition: background 0.5s;
 }
 
 .accordion .accordion-item .accordion-title:hover {
@@ -466,7 +479,7 @@ footer a:hover i {
     max-height: 0;
     overflow: hidden;
     background: white;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.2s ease;
 }
 
 .accordion .accordion-item .accordion-content p {

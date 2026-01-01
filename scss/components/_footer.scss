@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 footer {
     @extend %flex-center;
+<<<<<<< HEAD
     gap: 25px;
     padding: 20px 0px;
     background-color: #111;
@@ -18,11 +19,37 @@ footer {
         }
     }
     }
-}
-.bi-instagram:hover {
-    color: #E1306C;
+=======
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #111;
+  border-top: 1px solid #333;
+>>>>>>> ramatesteo
 }
 
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
+
+footer i {
+  font-size: 40px;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+}
+
+.bi-instagram:hover {
+    color: #e1306c;
+}
 .bi-facebook:hover {
     color: #1877F2;
 }
@@ -34,9 +61,15 @@ footer {
 .bi-whatsapp:hover {
     color: #25D366;
 }
+<<<<<<< HEAD
 .bi-linkedin:hover {
     color: #0e76a8;
 }
 .bi-youtube:hover {
     color: #ff0000;
+=======
+
+.bi-youtube:hover {
+    color: #FF0000;
+>>>>>>> ramatesteo
 }
