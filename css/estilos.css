@@ -82,12 +82,6 @@ body {
     text-align: center;
   }
 }
-<<<<<<< HEAD
-footer {
-  gap: 25px;
-  padding: 20px 0px;
-  background-color: #111;
-=======
 @media (max-width: 768px) {
   .flex-container {
     padding: 20px 10px;
@@ -102,7 +96,6 @@ footer {
   .flex-container .caja p {
     font-size: 0.9rem;
   }
->>>>>>> ramatesteo
 }
 @media (max-width: 480px) {
   .flex-container {
@@ -195,17 +188,8 @@ footer i:hover {
   color: #25D366;
 }
 
-<<<<<<< HEAD
-.bi-linkedin:hover {
-  color: #0e76a8;
-}
-
-.bi-youtube:hover {
-  color: #ff0000;
-=======
 .bi-youtube:hover {
   color: #FF0000;
->>>>>>> ramatesteo
 }
 
 header {
@@ -321,33 +305,7 @@ header {
 .flex-container img {
   max-width: 100%;
   height: auto;
-<<<<<<< HEAD
-  margin-top: 15px;
-}
-
-.contacto {
-  background: linear-gradient(to right, #FFFFFF, #EFEFEF);
-  padding: 50px 20px;
-  text-align: center;
-  border-top: 8px solid #FFD700;
-  border-bottom: 8px solid #FFD700;
-}
-
-.contacto h2 {
-  background-color: #23293b;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #FFD700;
-  margin-bottom: 15px;
-}
-
-.contacto p {
-  color: #0a0a0a;
-  font-size: 1.3rem;
-  line-height: 1.6;
-=======
   border-radius: 6px;
->>>>>>> ramatesteo
   margin-bottom: 10px;
 }
 
@@ -369,25 +327,9 @@ header {
 }
 
 .info-contacto i {
-<<<<<<< HEAD
-  color: #ff0000;
-  font-weight: bolder;
-  font-size: 1.4rem;
-}
-
-.info-contacto a {
-  color: #00296b;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.info-contacto a:hover {
-  text-decoration: underline;
-=======
   font-size: 24px;
   margin-right: 10px;
   color: #ffbe0b;
->>>>>>> ramatesteo
 }
 
 .contenedor2 {

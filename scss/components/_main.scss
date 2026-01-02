@@ -137,36 +137,6 @@
 }
 
 .contacto {
-<<<<<<< HEAD
-  background: linear-gradient(to right, #FFFFFF, #EFEFEF);
-  padding: 50px 20px;
-  text-align: center;
-  border-top: 8px solid#FFD700;
-  border-bottom: 8px solid#FFD700;
-}
-
-.contacto h2 {
-  background-color: $color-secundario;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #FFD700;
-  margin-bottom: 15px;
-}
-
-.contacto p {
-  color: #0a0a0a;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.info-contacto {
-  margin-top: 25px;
-}
-
-.info-contacto p {
-=======
->>>>>>> ramatesteo
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,26 +156,10 @@
 }
 
 .info-contacto i {
-<<<<<<< HEAD
-  color:  #ff0000;
-  font-weight: bolder;
-  font-size: 1.4rem;
-}
-
-.info-contacto a {
-  color: #00296b;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.info-contacto a:hover {
-  text-decoration: underline;
-=======
     font-size: 24px;
     margin-right: 10px;
     color: #ffbe0b;
 
->>>>>>> ramatesteo
 }
 
 .contenedor2 {
