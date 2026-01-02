@@ -220,6 +220,10 @@ header {
   box-shadow: #ffffff 0px 0px 10px;
 }
 
+.navbar-toggler {
+  border-color: #FF0000;
+}
+
 .nav-link {
   color: #ffffff !important;
   font-size: 18px;
@@ -243,7 +247,7 @@ header {
 }
 .btn:hover {
   background-color: #ffbe0b;
-  color: #000;
+  color: #0a0a0a;
   font-size: 17px;
   font-weight: 600;
   transition: 0.5s;
@@ -260,11 +264,19 @@ header {
 }
 .titulos p {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #ffbe0b;
+  color: #CACACA;
   font-size: 1.7rem;
   padding: 15px 20px;
   border-radius: 10px;
   max-width: 600px;
+}
+
+.marca {
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00FFFF;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 
 .flex-container {
