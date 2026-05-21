@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ICONOS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@500;600&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- SEO -->
+
+    <meta name="description"
+        content="MECANICA.VE taller mecánico y detailing premium. Reparación, mantenimiento y estética automotriz profesional.">
+    <meta name="keywords" content="mecánica, detailing, taller, autos, reparación, mantenimiento, estética vehicular">
+    <meta name="author" content="MECANICA.VE">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" type="image/jpg" href="img/logo.cjro.jpg">
+    <title>MECANICA.VE | Mecánica y Detailing Premium</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- HEADER -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"> <a class="navbar-brand" href="index.html">
+                    <h1>MECANICA.VE</h1>
+                </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link active" href="index.html"> Inicio </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="pages/servicios.html"> Servicios </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="pages/FAQ.html"> Preguntas Frecuentes </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="pages/contacto.html"> Contacto </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="pages/sobrenosotros.html"> Sobre Nosotros </a>
+                        </li>
+                    </ul>
+
+
+
+
+
+                    <!-- BUSCADOR -->
+
+                    <form class="d-flex"> <input class="form-control me-2" type="search" placeholder="Buscar"> <button
+                            class="btn" type="submit"> <i class="bi bi-search"></i> </button> </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+
+        <!-- PRESENTACION -->
+
+        <section>
+            <div class="titulos" data-aos="fade-right">
+                <p> Bienvenidos a <span class="marca"> MECANICA.VE </span>, tu taller de confianza especializado en
+                    mecánica automotriz ligera y detailing profesional. </p>
+            </div>
+        </section>
+
+
+
+        <!-- CARDS -->
+
+        <section>
+            <div class="flex-container" id="contenedorServicios"></div>
+        </section>
+
+
+        <!-- TEXTO -->
+
+        <section>
+            <div class="titulos" data-aos="fade-left">
+                <p> Combinamos experiencia técnica, innovación y compromiso con la excelencia. </p>
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contacto" data-aos="fade-up">
+            <div class="contacto-centro">
+                <h2>Contáctanos</h2>
+                <p> Estamos listos para ayudarte con todas tus necesidades automotrices. </p>
+                <div class="info-contacto">
+
+                    <p> <i class="bi bi-telephone-forward"></i> <a href="tel:+5491112345678"> +54 9 11 1234 5678 </a>
+                    </p>
+                    <p> <i class="bi bi-envelope-open"></i> <a href="mailto:mecanica.ve@gmail.com">
+                            mecanica.ve@gmail.com </a> </p>
+                    <p> <i class="bi bi-geo-alt"></i> Av. Centenario, San Isidro </p>
+
+                    <a href="https://wa.me/5491112345678?text=Hola%20quiero%20solicitar%20un%20servicio" target="_blank"
+                        class="whatsapp-box">
+                        <i class="bi bi-whatsapp"></i>
+
+                        <div>
+                            <span>Escríbenos</span>
+                            <p>Atención rápida por WhatsApp</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="contenedor2">
+            <div class="container01" data-aos="fade-right"> <img src="img/auto detailing.png" alt="Auto detailing"
+                    class="mi-imagen"> </div>
+            <div class="mi-caja" data-aos="flip-left">
+                <form id="formContacto"> <label for="name"> Nombre </label> <input type="text" id="name"
+                        placeholder="Tu nombre"> <label for="email"> Email </label> <input type="email" id="email"
+                        placeholder="Tu email"> <label for="message"> Mensaje </label> <textarea id="message" rows="5"
+                        placeholder="Escribe tu mensaje"></textarea> <button type="submit"> <i class="bi bi-send"></i>
+                        SOLICITAR SERVICIO </button>
+                    <p id="respuestaFormulario"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer id="redes"> <a id="ig" href="https://www.instagram.com/c.jonathan.o" target="_blank"> <i
+                class="bi bi-instagram"></i> </a> <a id="fb" href="https://www.facebook.com/" target="_blank"> <i
+                class="bi bi-facebook"></i> </a> <a id="tw" href="https://twitter.com/" target="_blank"> <i
+                class="bi bi-twitter-x"></i> </a> <a id="yt" href="https://www.youtube.com/" target="_blank"> <i
+                class="bi bi-youtube"></i> </a> </footer> <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
+
+
+    <!-- SWEET ALERT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1200, once: true }); </script>
+
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
