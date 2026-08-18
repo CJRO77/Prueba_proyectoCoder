@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Mecánica General",
+    "descripcion": "Diagnóstico, reparación de motores y tren delantero profesional.",
+    "imagen": "/img/experiencia.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Detailing Premium",
+    "descripcion": "Limpieza profunda, corrección de laca y restauración estética.",
+    "imagen": "/img/limpieza-profunda.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Mecánico a domicilio",
+    "descripcion": "Atención rápida y auxilio técnico donde te encuentres.",
+    "imagen": "/img/domicilios.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Cambio de Aceite y Filtros",
+    "descripcion": "Mantenimiento preventivo con insumos de primera calidad.",
+    "imagen": "/img/cambio-de-aceite.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Alineación y Balanceo",
+    "descripcion": "Optimización de neumáticos para un andar seguro y suave.",
+    "imagen": "/img/mantenimiento.jpg"
+  }
+]
