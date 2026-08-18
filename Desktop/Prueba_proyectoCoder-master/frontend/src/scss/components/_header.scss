@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+
+// Estilos para el header
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #0b0f19; 
+  padding: 1rem 2rem;
+  
+  border-bottom: 2px solid #090909;
+  box-shadow: 0 3px 15px rgba(249, 248, 241, 0.968);
+}
+
+.navbar-brand {
+  color: #ff003c;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85); 
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  
+  &:hover {
+    color: #ff003c; 
+    transform: translateY(-1px); 
+  }
+}

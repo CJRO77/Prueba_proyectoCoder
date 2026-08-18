@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+
+// Estilos para el footer
+
+#redes {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 10px 0;
+  width: 100%;
+  background: black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      
+
+  a {
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    display: inline-block;
+
+    &:hover {
+      transform: translateY(-5px) scale(1.1); 
+    }
+  }
+
+  i {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.75); 
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+
+  .bi-instagram:hover {
+    color: #e1306c;
+    filter: drop-shadow(0 0 12px rgba(225, 48, 108, 0.75));
+  }
+  
+  .bi-facebook:hover {
+    color: #1877F2;
+    filter: drop-shadow(0 0 12px rgba(24, 119, 242, 0.75));
+  }
+
+  .bi-twitter-x:hover {
+    color: #ffffff; 
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+  }
+
+  .bi-youtube:hover {
+    color: #FF0000;
+    filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.8));
+  }
+}
